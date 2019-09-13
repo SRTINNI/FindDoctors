@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finddoctors">
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MedicalNeed"
+            android:parentActivityName=".MedicalNeed"></activity>
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".RetriveChild" />
+        <activity android:name=".ChildSpecialists"
+            android:parentActivityName=".ChildSpecialists"/>
+        <activity
+            android:name=".AboutDeveloper"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Surgeons"
+            android:parentActivityName=".Surgeons"/>
+        <activity android:name=".Sonologists"
+            android:parentActivityName=".Sonologists"/>
+        <activity android:name=".Radiologists"
+            android:parentActivityName=".Radiologists"/>
+        <activity android:name=".Microbiologists"
+            android:parentActivityName=".Microbiologists"/>
+        <activity android:name=".Laparoscopists"
+            android:parentActivityName=".Laparoscopists"/>
+        <activity android:name=".SkinSpecialists"
+            android:parentActivityName=".SkinSpecialists"/>
+        <activity android:name=".ParalysisSpecialists"
+            android:parentActivityName=".ParalysisSpecialists"/>
+        <activity android:name=".Nephrologists"
+            android:parentActivityName=".Nephrologists"/>
+        <activity android:name=".Otolayngologists"
+            android:parentActivityName=".Otolayngologists"/>
+        <activity android:name=".Orthopedists"
+            android:parentActivityName=".Orthopedists"/>
+        <activity android:name=".Gastroenterologists"
+            android:parentActivityName=".Gastroenterologists"/>
+        <activity android:name=".Urologists"
+            android:parentActivityName=".Urologists"/>
+        <activity android:name=".Dentists"
+            android:parentActivityName=".Dentists"/>
+        <activity android:name=".DiabetesSpecialists"
+            android:parentActivityName=".DiabetesSpecialists"/>
+        <activity android:name=".Gynecologists"
+            android:parentActivityName=".Gynecologists"/>
+        <activity android:name=".SpinalSpecialists"
+            android:parentActivityName=".SpinalSpecialists"/>
+        <activity android:name=".Cardiologists"
+            android:parentActivityName=".Cardiologists"/>
+        <activity android:name=".Neurologists"
+            android:parentActivityName=".Neurologists"/>
+        <activity android:name=".Psychologists"
+            android:parentActivityName=".Psychologists"/>
+        <activity android:name=".MedicineSpecialists"
+            android:parentActivityName=".MedicineSpecialists"/>
+        <activity
+            android:name=".SplashSreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".EyeSpecialists"
+            android:parentActivityName=".EyeSpecialists"/>
+        <activity android:name=".DoctorsDpt"
+            android:parentActivityName=".DoctorsDpt"/>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorsDpt">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/paint">
+
+                    <ImageView
+                        android:src="@drawable/dicon"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:id="@+id/choose_dpt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose Department"
+                        android:textColor="#ffff"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/choose_dpt"
+                        android:text="22 departments"
+                        android:textColor="#ffff"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="215dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/ped"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view1"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/child"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pediatric"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view1"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/medi"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view2"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/medicine4"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Medicine"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view2"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/eye"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view3"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/eye2"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Eye"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view3"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/psycho"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view4"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/psychology"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Psychology"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view4"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/neuro"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view5"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/neurology"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Neurology"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view5"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cardio"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view6"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/cardiology"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cardiology"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view6"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/spinal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view7"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/spinal"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Spinal Cord"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view7"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/gyne"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view8"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/gyne"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gynecology"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view8"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/dia"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view9"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/diabetes"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Diabetes"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view9"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/dental"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view10"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/dental"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Dental"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view10"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/uro"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view11"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/urology"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Urology"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view11"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/gastro"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view12"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/stomach"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gastroenterology"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view12"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/ortho"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view15"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/orthopedic"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Orthopedics"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view15"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/otolar"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view16"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/otolaryngology"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Otolaryngology"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view16"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/nephro"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view13"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/nephrology"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nephrology"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view13"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/para"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view14"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/paralysis"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Paralysis"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view14"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/skin"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view17"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/skin"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Skin,Allergic"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view17"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/lapar"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view18"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/laparo"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Laparoscopy"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view18"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/micro"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view19"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/microbiology"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Microbiology"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view19"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/radio"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view20"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/radology"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Radiology"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view20"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/sono"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view21"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/sonology"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sonology"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view21"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/srgn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:id="@+id/img_view22"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/surgon"
+                                    android:layout_centerInParent="true" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Surgeon"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/img_view22"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "212318439878",
+    "firebase_url": "https://finddoctors-cea95.firebaseio.com",
+    "project_id": "finddoctors-cea95",
+    "storage_bucket": "finddoctors-cea95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212318439878:android:8ffd59e431f23149",
+        "android_client_info": {
+          "package_name": "com.example.finddoctors"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212318439878-pqrd6b21s01do7o5gr3216rtp6il6r9l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finddoctors",
+            "certificate_hash": "49b7aa8c4d263c0843fb4fa8a514de28d5f3f8a2"
+          }
+        },
+        {
+          "client_id": "212318439878-55rkmh76om8thht09apimhs2vhkspr78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-d8IgsY_SQ7E2HT54b_bsjmKE77589rU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212318439878-55rkmh76om8thht09apimhs2vhkspr78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

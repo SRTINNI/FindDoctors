@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".AboutDeveloper">
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginRight="120dp"
+        android:background="@drawable/about"
+        android:id="@+id/aboutd_img"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutd_img"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="15dp"
+        android:text="Developer:"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="118dp" />
+
+    <TextView
+        android:layout_below="@+id/aboutd_img"
+        android:layout_marginTop="55dp"
+        android:text="@string/mst_shahela_rahman"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:textStyle="normal"
+        android:layout_marginLeft="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/aboutd_img"
+        android:layout_marginTop="80dp"
+        android:text="@string/student_of_cse"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:textStyle="normal"
+        android:layout_marginLeft="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/aboutd_img"
+        android:layout_marginTop="105dp"
+        android:text="TEC,Bogura."
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:textStyle="normal"
+        android:layout_marginLeft="122dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/aboutd_img"
+        android:layout_marginTop="130dp"
+        android:text="@string/email"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:textStyle="normal"
+        android:layout_marginLeft="140dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/linkemail"
+        android:clickable="true"
+        android:autoLink="email"
+        android:layout_below="@+id/aboutd_img"
+        android:layout_marginTop="155dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="srtinni@gmail.com"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:textStyle="normal"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true" />
+
+
+    <TextView
+        android:layout_below="@+id/aboutd_img"
+        android:layout_marginTop="180dp"
+        android:text="@string/facebook"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:textStyle="normal"
+        android:layout_marginLeft="126dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/linkfb"
+        android:autoLink="all"
+        android:clickable="true"
+        android:layout_below="@+id/aboutd_img"
+        android:layout_marginTop="205dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="www.facebook.com/SRALPHABATE"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:textStyle="normal"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true" />
+
+
+</RelativeLayout>
