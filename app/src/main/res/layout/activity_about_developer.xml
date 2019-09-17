@@ -25,7 +25,7 @@
         android:textColor="#ffffff"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_marginStart="118dp" />
+        android:layout_marginStart="148dp" />
 
     <TextView
         android:layout_below="@+id/aboutd_img"
@@ -34,7 +34,7 @@
         android:textSize="18dp"
         android:textColor="#ffffff"
         android:textStyle="normal"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="105dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <TextView
@@ -44,7 +44,7 @@
         android:textSize="18dp"
         android:textColor="#ffffff"
         android:textStyle="normal"
-        android:layout_marginLeft="110dp"
+        android:layout_marginLeft="130dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <TextView
@@ -54,7 +54,7 @@
         android:textSize="18dp"
         android:textColor="#ffffff"
         android:textStyle="normal"
-        android:layout_marginLeft="122dp"
+        android:layout_marginLeft="137dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <TextView
@@ -64,7 +64,7 @@
         android:textSize="18dp"
         android:textColor="#ffffff"
         android:textStyle="normal"
-        android:layout_marginLeft="140dp"
+        android:layout_marginLeft="160dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -79,7 +79,7 @@
         android:textSize="15dp"
         android:textColor="#ffffff"
         android:textStyle="normal"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="122dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:focusable="true" />
@@ -92,7 +92,7 @@
         android:textSize="18dp"
         android:textColor="#ffffff"
         android:textStyle="normal"
-        android:layout_marginLeft="126dp"
+        android:layout_marginLeft="146dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <TextView
@@ -106,7 +106,7 @@
         android:textSize="15dp"
         android:textColor="#ffffff"
         android:textStyle="normal"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="75dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:focusable="true" />
