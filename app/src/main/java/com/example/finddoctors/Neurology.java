@@ -1,11 +1,10 @@
 package com.example.finddoctors;
 
 public class Neurology {
-
-    private static String Name;
-    private static String Qualifications;
-    private static String Place;
-    private static String Contacts;
+    private String Name;
+    private String Qualifications;
+    private String Place;
+    private String Contacts;
 
     public Neurology() {
     }
@@ -17,7 +16,7 @@ public class Neurology {
         Contacts = contacts;
     }
 
-    public static String getName() {
+    public String getName() {
         return Name;
     }
 
@@ -25,7 +24,7 @@ public class Neurology {
         Name = name;
     }
 
-    public static String getQualifications() {
+    public String getQualifications() {
         return Qualifications;
     }
 
@@ -33,7 +32,7 @@ public class Neurology {
         Qualifications = qualifications;
     }
 
-    public static String getPlace() {
+    public String getPlace() {
         return Place;
     }
 
@@ -41,7 +40,7 @@ public class Neurology {
         Place = place;
     }
 
-    public static String getContacts() {
+    public String getContacts() {
         return Contacts;
     }
 
